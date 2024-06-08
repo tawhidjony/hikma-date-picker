@@ -38,8 +38,6 @@ const UiDatePicker = React.forwardRef<HTMLInputElement, UiDatePickerProps>(({ cl
     const newDate = new Date(year, month, day);
     setSelectedDate(newDate);
     setShowDatePicker(false);
-
-    // Format the date and trigger onChange with the formatted date
     const formattedDate = newDate.toLocaleDateString("en-US", {
       year: "numeric",
       month: "2-digit",
