@@ -1,2 +1,2 @@
 import './index.css';
-export {default as UiDatePcker } from './components/UiDatePcker'
+export { default as UiDatePicker } from './components/UiDatePicker'

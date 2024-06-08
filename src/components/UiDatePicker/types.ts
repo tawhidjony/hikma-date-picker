@@ -1,6 +1,6 @@
 import { ChangeEvent } from "react";
 
-export interface UiDatePckerProps {
+export interface UiDatePickerProps {
     className?: string;
     selectedStyle?: string;
     todayDateStyle?: string;
