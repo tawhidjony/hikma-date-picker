@@ -14,9 +14,9 @@
     "test": "jest",
     "test:watch": "jest --watchAll --verbose",
     "prepare": "husky",
-    "push": "npm version patch",
-    "push-minor": "npm version minor",
-    "push-major": "npm version major",
+    "patch": "npm version patch",
+    "minor": "npm version minor",
+    "major": "npm version major",
     "alpha": "npm version 1.0.1-alpha.0",
     "push-alpha": "npm run publish --tag alpha"
   },
