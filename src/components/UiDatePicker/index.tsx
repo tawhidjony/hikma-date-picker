@@ -78,7 +78,7 @@ const UiDatePicker = React.forwardRef<HTMLInputElement, UiDatePickerProps>(({ cl
         selectedDate.getMonth() === month &&
         selectedDate.getDate() === i;
       datesArray.push(
-        <button key={i} className={cn("border border-gray-300 rounded p-1 cursor-pointer", isToday ? cn("border border-primary-600 bg-primary-200", todayDateStyle) : isSelected ? cn("bg-primary-400 text-primary-900 border border-primary-600", selectedStyle) : "bg-white")} onClick={() => handleDateClick(i)}>
+        <button type="button" key={i} className={cn("border border-gray-300 rounded p-1 cursor-pointer", isToday ? cn("border border-primary-600 bg-primary-200", todayDateStyle) : isSelected ? cn("bg-primary-400 text-primary-900 border border-primary-600", selectedStyle) : "bg-white")} onClick={() => handleDateClick(i)}>
           {i}
         </button>
       );
