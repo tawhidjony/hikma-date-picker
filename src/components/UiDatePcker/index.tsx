@@ -6,8 +6,7 @@ interface DateChangeEvent extends React.ChangeEvent<HTMLInputElement> {
   target: HTMLInputElement & EventTarget & { value: string };
 }
 
-
-export const UiDatePicker = React.forwardRef<HTMLInputElement, UiDatePckerProps>(({ className, selectedStyle, todayDateStyle, onChange, value }, ref) => {
+const UiDatePicker = React.forwardRef<HTMLInputElement, UiDatePckerProps>(({ className, selectedStyle, todayDateStyle, onChange, value }, ref) => {
   const [selectedDate, setSelectedDate] = useState<Date>(new Date());
   const [year, setYear] = useState<number>(selectedDate.getFullYear());
   const [month, setMonth] = useState<number>(selectedDate.getMonth());
@@ -169,3 +168,4 @@ export const UiDatePicker = React.forwardRef<HTMLInputElement, UiDatePckerProps>
 });
 
 
+export default UiDatePicker
