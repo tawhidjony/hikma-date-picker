@@ -12,7 +12,8 @@ const UiDatePicker = React.forwardRef<HTMLInputElement, UiDatePickerProps>(({ cl
   const [month, setMonth] = useState<number>(selectedDate.getMonth());
   const [showDatePicker, setShowDatePicker] = useState<boolean>(false);
 
-  const handleDateInputClick = () => {
+  const handleDateInputClick = (event: React.MouseEvent<HTMLInputElement>) => {
+    event.preventDefault()
     setShowDatePicker(!showDatePicker);
   };
 
