@@ -1,0 +1,8 @@
+
+npm test
+
+# Run Lint Before Commit
+# npm run lint
+
+# Run Build Before Commit
+npm run build
