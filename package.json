@@ -1,6 +1,6 @@
 {
   "name": "hikma-date-picker",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "This is a tailwindcss base date picker",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
