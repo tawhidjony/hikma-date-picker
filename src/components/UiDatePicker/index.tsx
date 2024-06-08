@@ -62,7 +62,7 @@ const UiDatePicker = React.forwardRef<HTMLInputElement, UiDatePickerProps>(({ cl
 
     for (let i = 0; i <= lastOfPrevMonth.getDay(); i++) {
       datesArray.push(
-        <button key={`prev-${i}`} className="bg-gray-100 border border-gray-300 rounded p-1 cursor-not-allowed" disabled>
+        <button type="button" key={`prev-${i}`} className="bg-gray-100 border border-gray-300 rounded p-1 cursor-not-allowed" disabled>
           {lastOfPrevMonth.getDate() - lastOfPrevMonth.getDay() + i}
         </button>
       );
@@ -86,7 +86,7 @@ const UiDatePicker = React.forwardRef<HTMLInputElement, UiDatePickerProps>(({ cl
 
     for (let i = firstOfNextMonth.getDay(); i < 7; i++) {
       datesArray.push(
-        <button key={`next-${i}`} className="bg-gray-100 border border-gray-300 rounded p-1 cursor-not-allowed" disabled>
+        <button type="button" key={`next-${i}`} className="bg-gray-100 border border-gray-300 rounded p-1 cursor-not-allowed" disabled>
           {firstOfNextMonth.getDate() - firstOfNextMonth.getDay() + i}
         </button>
       );
@@ -136,12 +136,12 @@ const UiDatePicker = React.forwardRef<HTMLInputElement, UiDatePickerProps>(({ cl
               />
             </div>
             <div className="flex gap-2 items-center justify-center">
-              <button className="h-8 w-8 rounded border-none flex justify-center items-center bg-primary-500 text-white cursor-pointer" onClick={handlePrevMonthClick}>
+              <button type="button" className="h-8 w-8 rounded border-none flex justify-center items-center bg-primary-500 text-white cursor-pointer" onClick={handlePrevMonthClick}>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
                 </svg>
               </button>
-              <button className="h-8 w-8 rounded border-none flex justify-center items-center bg-primary-500 text-white cursor-pointer" onClick={handleNextMonthClick}>
+              <button type="button" className="h-8 w-8 rounded border-none flex justify-center items-center bg-primary-500 text-white cursor-pointer" onClick={handleNextMonthClick}>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6">
                   <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
                 </svg>
